@@ -201,6 +201,13 @@ namespace TeklaFirstApp
             Tekla.Structures.Geometry3d.Matrix AroundZ = Tekla.Structures.Geometry3d.MatrixFactory.Rotate(30.0 * Math.PI * 2.0 / 360.0, coordinateSystem.AxisY);
 
             Tekla.Structures.Geometry3d.Matrix Rotation = AroundX * AroundZ;
+
+            displayCoordinateSystem.AxisX = new Tekla.Structures.Geometry3d.Vector(Rotation.Transform(new Tekla.Structures.Geometry3d.Point(coordinateSystem.AxisX)));
+            displayCoordinateSystem.AxisY = new Tekla.Structures.Geometry3d.Vector(Rotation.Transform(new Tekla.Structures.Geometry3d.Point(coordinateSystem.AxisY)));
+            Tekla.Structures.Drawing.View RotatedView = new Tekla.Structures.Drawing.View(MyDrawing.GetSheet(), coordinateSystem, displayCoordinateSystem, Parts);
+
+            RotatedView.Name = Name;
+            RotatedView.Insert();
         }
     }
 }
