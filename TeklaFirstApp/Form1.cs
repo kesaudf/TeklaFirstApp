@@ -111,7 +111,17 @@ namespace TeklaFirstApp
                     else if (selectedModelObjects.Current is Tekla.Structures.Model.BaseComponent)
                         Parts = GetComponentParts(selectedModelObjects.Current as Tekla.Structures.Model.BaseComponent);
 
+                    CreateViews(ModelObjectCoordSys, ModelObjectName, MyDrawing, Parts);
+                    MyDrawing.PlaceViews();
+
+                    DrawingHandler.CloseActiveDrawing(true); //Сохранение и закрытие активного окна
+
                 }
+
+                if (MyDrawing != null && openDrawings.Checked)
+                    DrawingHandler.SetActiveDrawing(MyDrawing);
+
+                Model.GetWorkPlaneHandler().SetCurrentTransformationPlane(current); //возврат исходной плоскости
             }
             catch (Exception exception)
             {
@@ -184,7 +194,7 @@ namespace TeklaFirstApp
             if (createEndView.Checked)
                 AddViews("End View of" + ModelObjectName, MyDrawing, Parts, GetBasicViewsCoordinateSystemForEndView(ModelObjectCoordSys));
             if (create3dView.Checked)
-                AddViews("3d View of" + ModelObjectName, MyDrawing, Parts, GetBasicViewsCoordinateSystemFor3dView(ModelObjectCoordSys));
+                AddViews("3d View of" + ModelObjectName, MyDrawing, Parts, GetBasicViewsCoordinateSystemForFrontView(ModelObjectCoordSys));
         }
 
         private void AddViews(String Name, Drawing MyDrawing, ArrayList Parts, Tekla.Structures.Geometry3d.CoordinateSystem coordinateSystem)
