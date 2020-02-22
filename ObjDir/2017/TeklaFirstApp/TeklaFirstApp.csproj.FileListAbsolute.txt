@@ -1,0 +1,10 @@
+D:\Desktop\Tekla\Tekla_First_App\TeklaFirstApp\TeklaFirstApp\bin\Debug\TeklaFirstApp.exe.config
+D:\Desktop\Tekla\Tekla_First_App\TeklaFirstApp\TeklaFirstApp\bin\Debug\TeklaFirstApp.exe
+D:\Desktop\Tekla\Tekla_First_App\TeklaFirstApp\TeklaFirstApp\bin\Debug\TeklaFirstApp.pdb
+D:\Desktop\Tekla\Tekla_First_App\TeklaFirstApp\ObjDir\2017\TeklaFirstApp\TeklaFirstApp.csprojAssemblyReference.cache
+D:\Desktop\Tekla\Tekla_First_App\TeklaFirstApp\ObjDir\2017\TeklaFirstApp\TeklaFirstApp.Form1.resources
+D:\Desktop\Tekla\Tekla_First_App\TeklaFirstApp\ObjDir\2017\TeklaFirstApp\TeklaFirstApp.Properties.Resources.resources
+D:\Desktop\Tekla\Tekla_First_App\TeklaFirstApp\ObjDir\2017\TeklaFirstApp\TeklaFirstApp.csproj.GenerateResource.cache
+D:\Desktop\Tekla\Tekla_First_App\TeklaFirstApp\ObjDir\2017\TeklaFirstApp\TeklaFirstApp.csproj.CoreCompileInputs.cache
+D:\Desktop\Tekla\Tekla_First_App\TeklaFirstApp\ObjDir\2017\TeklaFirstApp\TeklaFirstApp.exe
+D:\Desktop\Tekla\Tekla_First_App\TeklaFirstApp\ObjDir\2017\TeklaFirstApp\TeklaFirstApp.pdb
