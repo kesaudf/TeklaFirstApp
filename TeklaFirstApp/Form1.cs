@@ -14,7 +14,8 @@ namespace TeklaFirstApp
             InitializeComponent();
         }
 
-        private Model Model = new Model();
+        private Model Model = new Model(); //Создание экземпляра модели
+        
         private DrawingHandler DrawingHandler = new DrawingHandler();
 
         #region Coordinate system calculations
